@@ -6,12 +6,14 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "8080:3000"
+      - "3000"
     networks:
       - nodeapp-network
 
   mongodb:
     image: mongo
+    ports:
+      - "27017:27017"
     networks:
       - nodeapp-network
 
