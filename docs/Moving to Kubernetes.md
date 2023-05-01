@@ -19,7 +19,7 @@ Kubernetes, also known as K8s, is an open-source system for automating deploymen
 
 ## Kubernetes Big Picture
 
-![Screenshot from 2023-04-29 10-30-36.png](Moving%20to%20Kubernetes%20eec810c3517c4261b5a2b8c125b6b001/Screenshot_from_2023-04-29_10-30-36.png)
+![Screenshot from 2023-04-29 10-30-36.png](Moving%20to%20Kubernetes/Screenshot_from_2023-04-29_10-30-36.png)
 
 In Kubernetes, a cluster is made up of one or more nodes, which are the worker machines that run containerized applications. Each cluster also has a master node, which is responsible for managing the cluster and its nodes. The master node runs the Kubernetes control plane, which controls the entire cluster. Pod is having containers.
 
@@ -36,7 +36,7 @@ Visit this link - [https://minikube.sigs.k8s.io/docs/start/](https://minikube.si
 
 You will see first step is to select your system configuration and as per the configuration, it will give you the commands to install minikube
 
-![Screenshot from 2023-04-29 12-17-27.png](Moving%20to%20Kubernetes%20eec810c3517c4261b5a2b8c125b6b001/Screenshot_from_2023-04-29_12-17-27.png)
+![Screenshot from 2023-04-29 12-17-27.png](Moving%20to%20Kubernetes/Screenshot_from_2023-04-29_12-17-27.png)
 
 I’m using Ubuntu so **copy the first command and run in terminal** - 
 
@@ -133,7 +133,7 @@ kompose convert
 
 After running above command you should see the different files created in your project directory as per the services defined in docker-compose.yml file
 
-![Screenshot from 2023-04-29 13-15-56.png](Moving%20to%20Kubernetes%20eec810c3517c4261b5a2b8c125b6b001/Screenshot_from_2023-04-29_13-15-56.png)
+![Screenshot from 2023-04-29 13-15-56.png](Moving%20to%20Kubernetes/Screenshot_from_2023-04-29_13-15-56.png)
 
 If you want to create a single file instead of different file, you can run this command
 
@@ -165,7 +165,7 @@ You can run command `kubectl get deployments` to see the new deployment.
 
 You can also see the pods by running command `kubectl get pods` . It should give output like this 
 
-![Screenshot from 2023-04-29 15-49-15.png](Moving%20to%20Kubernetes%20eec810c3517c4261b5a2b8c125b6b001/Screenshot_from_2023-04-29_15-49-15.png)
+![Screenshot from 2023-04-29 15-49-15.png](Moving%20to%20Kubernetes/Screenshot_from_2023-04-29_15-49-15.png)
 
 Now to access this Nginx server, we need to forward the port - 
 
@@ -175,7 +175,7 @@ kubectl port-forward nginx-server 8080:80
 
 So now, if you goto [http://localhost:8080/](http://localhost:8080/) You should see the default page of Nginx
 
-![Screenshot from 2023-04-29 15-51-45.png](Moving%20to%20Kubernetes%20eec810c3517c4261b5a2b8c125b6b001/Screenshot_from_2023-04-29_15-51-45.png)
+![Screenshot from 2023-04-29 15-51-45.png](Moving%20to%20Kubernetes/Screenshot_from_2023-04-29_15-51-45.png)
 
 If you want to delete deployment then run command - `kubectl delete deployment [deployment_name]`
 
@@ -185,7 +185,7 @@ You can also delete the pod using the command `kubectl delete pod [pod name]`
 
 First we will create a new folder in our project’s root directory `**.k8s**` and move all kubernet yaml files inside. We are doing it so that we can run all file at a time otherwise we need to provide filenames one-by-one. 
 
-![Screenshot from 2023-04-29 16-05-22.png](Moving%20to%20Kubernetes%20eec810c3517c4261b5a2b8c125b6b001/Screenshot_from_2023-04-29_16-05-22.png)
+![Screenshot from 2023-04-29 16-05-22.png](Moving%20to%20Kubernetes/Screenshot_from_2023-04-29_16-05-22.png)
 
 Create these resources in Kubernets
 

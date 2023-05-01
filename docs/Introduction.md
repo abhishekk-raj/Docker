@@ -27,7 +27,7 @@ Docker runs natively on Linux and Windows Server operating systems. It can also 
 
 Docker containers are more lightweight and faster to start up than virtual machines, as they share the same kernel as the host system. This means that they use fewer resources and can be scaled more easily. Virtual machines, on the other hand, provide a more isolated environment and can run multiple operating systems on the same hardware, making them more flexible in some use cases. However, they require more resources and take longer to start up than Docker containers.
 
-[container-vs-vm-inline1_tcm19-82163.avif](Introduction%204d96d164c8b84df7ab13d05af288b3cc/container-vs-vm-inline1_tcm19-82163.avif)
+[container-vs-vm-inline1_tcm19-82163.avif](Introduction/container-vs-vm-inline1_tcm19-82163.avif)
 
 ## Docker Benefits
 

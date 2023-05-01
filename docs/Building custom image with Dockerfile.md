@@ -5,7 +5,7 @@
 A Dockerfile is a text document that contains a set of instructions and commands that are used to build a Docker image. It is essentially a script that uses the Docker platform to generate containers automatically. The Dockerfile contains all the commands that a user could call on the command line to assemble an image. The instructions in a Dockerfile include things like specifying the base image, adding files and directories, running commands, and exposing ports. By using a Dockerfile, you can automate the process of building Docker images, making it easier to create and manage containers. Dockerfiles are used to create custom images that can be used to run applications in containers. Once a Dockerfile is created, it can be used to build an image using the **`docker build`**
 command.
 
-![Screenshot from 2023-04-22 12-31-43.png](Building%20custom%20image%20with%20Dockerfile%20773781c9148b438d81a3e3864f7485df/Screenshot_from_2023-04-22_12-31-43.png)
+![Screenshot from 2023-04-22 12-31-43.png](Building%20custom%20image%20with%20Dockerfile/Screenshot_from_2023-04-22_12-31-43.png)
 
 1. Dockerfile is just a text file that is used to build Docker images
 2. It contains build instructions
@@ -60,7 +60,7 @@ Here, **`-t`** used for assigning tag, **`-f`** is used to specify the docker fi
 
 After building the image let’s run `docker images` to see all images. It will list out all the images like below -
 
-![Screenshot from 2023-04-22 15-13-57.png](Building%20custom%20image%20with%20Dockerfile%20773781c9148b438d81a3e3864f7485df/Screenshot_from_2023-04-22_15-13-57.png)
+![Screenshot from 2023-04-22 15-13-57.png](Building%20custom%20image%20with%20Dockerfile/Screenshot_from_2023-04-22_15-13-57.png)
 
 Here you can see new images is added with the name `abhishekkraj/node`
 
@@ -79,15 +79,15 @@ Here -d is used to run docker container in demon mode, so that it will not show 
 3. Login to docker hub - `docker login`
 4. Enter the Username and Password
 
-![Screenshot from 2023-04-22 20-34-54.png](Building%20custom%20image%20with%20Dockerfile%20773781c9148b438d81a3e3864f7485df/Screenshot_from_2023-04-22_20-34-54.png)
+![Screenshot from 2023-04-22 20-34-54.png](Building%20custom%20image%20with%20Dockerfile/Screenshot_from_2023-04-22_20-34-54.png)
 
 1. After successful login, you can push the image to Docker Hub - `docker push abhishekkraj/node`
 
-![Screenshot from 2023-04-22 20-38-51.png](Building%20custom%20image%20with%20Dockerfile%20773781c9148b438d81a3e3864f7485df/Screenshot_from_2023-04-22_20-38-51.png)
+![Screenshot from 2023-04-22 20-38-51.png](Building%20custom%20image%20with%20Dockerfile/Screenshot_from_2023-04-22_20-38-51.png)
 
 1. Now go to Docker Hub and you should be able to see your image there
 
-![Screenshot from 2023-04-22 20-41-25.png](Building%20custom%20image%20with%20Dockerfile%20773781c9148b438d81a3e3864f7485df/Screenshot_from_2023-04-22_20-41-25.png)
+![Screenshot from 2023-04-22 20-41-25.png](Building%20custom%20image%20with%20Dockerfile/Screenshot_from_2023-04-22_20-41-25.png)
 
 So now if you want to use your image, you can pull it directly from Docker Hub and use it.
 

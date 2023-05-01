@@ -8,13 +8,13 @@ A layered file system is a way of combining multiple file systems into a single,
 
 When hooking source code into a container, it is important to consider how the layered file system will be used. Typically, the source code will be mounted as a read-only layer, while any build artifacts or generated files will be written to a separate layer. This helps to ensure that the source code remains unchanged, while still allowing the container to build and execute the application as needed.
 
-![Screenshot from 2023-04-21 09-29-24.png](Hooking%20Source%20code%20into%20a%20Container%208470165ec3bc4d349c82b22522b29669/Screenshot_from_2023-04-21_09-29-24.png)
+![Screenshot from 2023-04-21 09-29-24.png](Hooking%20Source%20code%20into%20a%20Container/Screenshot_from_2023-04-21_09-29-24.png)
 
 Images are Read-Only, we cannot modify it. So we can create another layer on top of it that is Container Layer, here we can do both Read and Write. 
 
 And this is the basic difference between Docker Image and Container. If Container gets deleted then the writable layer will also get deleted. 
 
-![Screenshot from 2023-04-21 09-35-43.png](Hooking%20Source%20code%20into%20a%20Container%208470165ec3bc4d349c82b22522b29669/Screenshot_from_2023-04-21_09-35-43.png)
+![Screenshot from 2023-04-21 09-35-43.png](Hooking%20Source%20code%20into%20a%20Container/Screenshot_from_2023-04-21_09-35-43.png)
 
 We can create multiple containers from an Image. We can store our source code in Docker Container, but problem with container is when you will delete the container, source code and other files will also get deleted. 
 
@@ -26,7 +26,7 @@ It’s a special type of directory in a container typically referred to as a “
 
 If we update the image, it will not affect a data volume. Data volumes are actually persisted even after the container is deleted. 
 
-![Screenshot from 2023-04-21 10-44-36.png](Hooking%20Source%20code%20into%20a%20Container%208470165ec3bc4d349c82b22522b29669/Screenshot_from_2023-04-21_10-44-36.png)
+![Screenshot from 2023-04-21 10-44-36.png](Hooking%20Source%20code%20into%20a%20Container/Screenshot_from_2023-04-21_10-44-36.png)
 
 When we write to a volume that means when we write our source code to the docker container it actually writes it to `/var/www` path that is really an alias to the mounted folder on Docker Host. 
 
@@ -58,7 +58,7 @@ docker inspect mycontainer
 
 It will give a very long output with all the details…
 
-![Screenshot from 2023-04-21 11-30-17.png](Hooking%20Source%20code%20into%20a%20Container%208470165ec3bc4d349c82b22522b29669/Screenshot_from_2023-04-21_11-30-17.png)
+![Screenshot from 2023-04-21 11-30-17.png](Hooking%20Source%20code%20into%20a%20Container/Screenshot_from_2023-04-21_11-30-17.png)
 
 Here we can see the source and destination. In the source I have mounted it to the directory of Docker Host i.e my Ubuntu computer.
 

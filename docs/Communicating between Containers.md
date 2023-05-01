@@ -72,7 +72,7 @@ docker network inspect isolated_network
 
 It will inspect the network and show the details like below - 
 
-![Screenshot from 2023-04-25 11-33-52.png](Communicating%20between%20Containers%2092985ca4dba746219224a4b3008c53e7/Screenshot_from_2023-04-25_11-33-52.png)
+![Screenshot from 2023-04-25 11-33-52.png](Communicating%20between%20Containers/Screenshot_from_2023-04-25_11-33-52.png)
 
 Here you can see the name, id, driver, subnet, gateway, attached containers etc.
 

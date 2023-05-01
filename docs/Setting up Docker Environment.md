@@ -10,7 +10,7 @@ Visit the link given below
 
 Here you can find options to download Docker for Windows, Mac and Linux
 
-![Screenshot from 2023-04-20 23-12-38.png](Setting%20up%20Docker%20Environment%20e9144e08b2244a68944c3a7bcaca5bc6/Screenshot_from_2023-04-20_23-12-38.png)
+![Screenshot from 2023-04-20 23-12-38.png](Setting%20up%20Docker%20Environment/Screenshot_from_2023-04-20_23-12-38.png)
 
 And then follow the instructions given in below link - 
 
@@ -18,7 +18,7 @@ And then follow the instructions given in below link -
 
 So when you will click on See Docker Desktop for Mac, then you will redirect to the above link. There you can find option to download Docker desktop for Intel/Silicon chip
 
-![Screenshot from 2023-04-20 23-15-47.png](Setting%20up%20Docker%20Environment%20e9144e08b2244a68944c3a7bcaca5bc6/Screenshot_from_2023-04-20_23-15-47.png)
+![Screenshot from 2023-04-20 23-15-47.png](Setting%20up%20Docker%20Environment/Screenshot_from_2023-04-20_23-15-47.png)
 
 ## Install Docker On Windows
 
@@ -34,7 +34,7 @@ And then follow the instructions given in the below link:
 
 [https://docs.docker.com/desktop/windows/install/](https://docs.docker.com/desktop/windows/install/)
 
-![Screenshot from 2023-04-20 23-22-50.png](Setting%20up%20Docker%20Environment%20e9144e08b2244a68944c3a7bcaca5bc6/Screenshot_from_2023-04-20_23-22-50.png)
+![Screenshot from 2023-04-20 23-22-50.png](Setting%20up%20Docker%20Environment/Screenshot_from_2023-04-20_23-22-50.png)
 
 ## Docker Kitematic
 
